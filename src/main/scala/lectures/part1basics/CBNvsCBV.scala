@@ -24,7 +24,7 @@ object CBNvsCBV extends App{
 //	callByName(System.nanoTime())
 
 	def infinite(): Int = 1 + infinite()
-	def printFirst(x: Int, y: => Int) = println(x)
+	def printFirst(x: Int, y: => Int): Unit = println(x)
 
 //	printFirst(infinite(), 24)
 	printFirst(24, infinite())
