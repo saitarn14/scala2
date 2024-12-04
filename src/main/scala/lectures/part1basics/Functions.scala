@@ -1,5 +1,7 @@
 package lectures.part1basics
 
+import scala.annotation.tailrec
+
 /**
  * Created by saita on 29-11-2024.
  */
@@ -13,7 +15,7 @@ object Functions extends App{
 	def aParameterlessFunction(): Int = 42
 
 	println(aParameterlessFunction())
-	println(aParameterlessFunction)
+//	println(aParameterlessFunction)
 
 	def aRepeatedFunction(aString: String, n: Int): String = {
 		if (n == 1) aString
@@ -57,6 +59,7 @@ object Functions extends App{
 //	fibonacciFunction(8)
 
 	def isPrimeFunction(n: Int): Boolean = {
+		@tailrec
 		def isPrimeUntil(t: Int): Boolean = {
 			if (t <= 1) true
 			else n % t != 0 && isPrimeUntil(t-1)
