@@ -44,11 +44,17 @@ object Functions extends App{
 	println(factoriaFunction(5))
 
 	def fibonacciFunction(n: Int):Int = {
-		if (n <= 2) 1
-		else fibonacciFunction(n-1) + fibonacciFunction(n-2)
+		if (n <= 2) {
+//			println("1")
+			1
+		} else {
+//			println(fibonacciFunction(n-1) + fibonacciFunction(n-2))
+			fibonacciFunction(n-1) + fibonacciFunction(n-2)
+		}
 
 	}
 	println(fibonacciFunction(8))
+//	fibonacciFunction(8)
 
 	def isPrimeFunction(n: Int): Boolean = {
 		def isPrimeUntil(t: Int): Boolean = {
@@ -61,4 +67,5 @@ object Functions extends App{
 	println(isPrimeFunction(37))
 	println(isPrimeFunction(200))
 	println(isPrimeFunction(201))
+	println(isPrimeFunction(-1))
 }
