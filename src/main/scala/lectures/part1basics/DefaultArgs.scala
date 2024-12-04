@@ -13,7 +13,7 @@ object DefaultArgs extends App {
 	}
 
 //	val fact10 = trFact(10,1)
-	val fact10 = trFact(5,1)
+	val fact10 = trFact(n=5,acc=1)
 	val fact10_1 = trFact(5)
 	println(fact10)
 	println(fact10_1)
