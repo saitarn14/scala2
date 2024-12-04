@@ -18,7 +18,7 @@ object DefaultArgs extends App {
 	println(fact10)
 	println(fact10_1)
 
-	def savePicture(format: String = "jpg", width: Int = 1920, height: Int = 1080): Unit = println("saving picture.. "+ width + "x" + height)
+	private def savePicture(format: String = "jpg", width: Int = 1920, height: Int = 1080): Unit = println("saving picture.. "+ width + "x" + height)
 //	savePicture("jpg", 800, 600)
 	/*
 	1. pass in every leading argument => savePicture("jpg", 800, 600)
