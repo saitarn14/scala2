@@ -24,7 +24,7 @@ object DefaultArgs extends App {
 	1. pass in every leading argument => savePicture("jpg", 800, 600)
 	2. name the arguments savePicture(width = 800, height = 600)
 	 */
-
+	savePicture("jpg", 800, 600)
 	savePicture(width = 2000, height = 600)
 	savePicture(height = 600)
 	savePicture(format = "png")
