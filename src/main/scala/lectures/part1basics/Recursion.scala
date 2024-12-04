@@ -66,7 +66,7 @@ object Recursion extends App{
 			else if (t <= 1) true
 			else isPrimeTailrec(t-1, n % t != 0 && isStillPrime)
 		}
-		isPrimeTailrec(n / 2, true)
+		isPrimeTailrec(n / 2, isStillPrime = true)
 	}
 	println(isPrime(2004))
 
