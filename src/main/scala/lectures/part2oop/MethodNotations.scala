@@ -27,9 +27,9 @@ object MethodNotations extends App {
 
 	}
 
-	val fonfon = new Person("FONFon", "Interstella")
-	println(fonfon.likes("interstella"))
-	println(fonfon likes "interstella") // equivalent
+	val fonfon = new Person("FONFon", "Interstellar")
+	println(fonfon.likes("Interstellar"))
+	println(fonfon likes "interstellar") // equivalent
 	// infix notation = operator notation (syntactic sugar)
 
 
